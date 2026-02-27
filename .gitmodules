@@ -1,3 +1,4 @@
 [submodule "components"]
 	path = components
 	url = https://github.com/xuejianqiang123/components.git
+#   branch = V1.0.0  # ← 指定要跟踪的分支名

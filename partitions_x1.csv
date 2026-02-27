@@ -1,0 +1,18 @@
+# Name,   Type, SubType, Offset,  Size, Flags
+# Note: if you have increased the bootloader size, make sure to update the offsets to avoid overlap,,,,
+nvs,      			data,		nvs,      0x9000,		784K,
+ota_data, 			data,		ota,      0xcd000,  	8K,
+phy_init, 			data,		phy,      0xcf000,  	4K,
+ota_0,    			app,		ota_0,	  0xd0000, 		3M,		encrypted
+ota_1,    			app,		ota_1,	  0x3d0000, 	3M,		encrypted
+pa_param,			data,		0XFF,     0x6d0000,  	4K,		encrypted
+data_01,			data,		0XFF,     0x6d1000,	    256K, 	encrypted
+data_02,			data,		0XFF,     0x711000,  	128K, 	encrypted
+data_32k_1,			data,		0XFF,     0x731000,  	32K,	encrypted
+data_32k_2,			data,		0XFF,     0x739000,  	32K,	encrypted
+data_60k,			data,		0XFF,     0x741000,  	60K,	encrypted
+data_64k,			data,		0XFF,     0x750000,  	64K,	encrypted
+data_128k,			data,		0XFF,     0x760000,  	128K,	encrypted
+data_256k_1,		data,		0XFF,     0x780000,  	256K,	encrypted
+data_256k_2,		data,		0XFF,     0x7c0000,  	256K,	encrypted
+
